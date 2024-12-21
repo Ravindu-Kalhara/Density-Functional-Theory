@@ -1,0 +1,52 @@
+
+     Program DOS v.7.3.1 starts on 21Dec2024 at 20:25:21 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     11143 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     ./temp/silicon.save/
+     file Si.pbesol-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBESOL
+                           (   1   4  10   8   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          91      91     27                 1617     1617     278
+     Max          92      92     28                 1618     1618     280
+     Sum         733     733    223                12939    12939    2229
+
+     Using Slab Decomposition
+
+
+     Tetrahedra used
+
+
+     DOS          :      1.33s CPU      1.47s WALL
+
+
+   This run was terminated on:  20:25:23  21Dec2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

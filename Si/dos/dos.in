@@ -1,0 +1,6 @@
+ &DOS
+   prefix          = 'silicon' 
+   outdir          = './temp/' 
+   fildos          = 'dos.dat' 
+ /
+
