@@ -1,0 +1,17 @@
+load_fromPWI si_scf_ecutwfc.in
+
+set fid [open etot-vs-ecutwfc.dat w]
+set outdir "./results"
+
+foreach ecutwfc { 10 20 30 40 50 60 70 80 90 } {
+
+    set name si_scf_ecutwfc-$ecutwfc
+
+    SYSTEM "ecutwfc = $ecutwfc"
+    runPW "$outdir/$name.in"
+
+    set Etot [::pwtk::pwo::totene "$outdir/$name.out"]
+    puts $fid "$ecutwfc $Etot"
+}
+
+close $fid
