@@ -1,0 +1,17 @@
+load_fromPWI si_relax_a.in
+
+set fid [open etot-vs-a.dat w]
+set outdir "./results"
+
+foreach a { 3.30 3.40 3.50 3.60 3.70 3.75 3.80 3.85 3.90 3.95 4.00 4.10 4.20 4.30 4.40 4.50 4.60 4.80 5.00 } {
+
+    set name si_relax_a-$a
+
+    SYSTEM "A = $a"
+    runPW "$outdir/$name.in"
+
+    set Etot [::pwtk::pwo::totene "$outdir/$name.out"]
+    puts $fid "$a $Etot"
+}
+
+close $fid
