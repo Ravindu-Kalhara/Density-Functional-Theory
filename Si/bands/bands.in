@@ -1,0 +1,37 @@
+ &CONTROL
+   calculation     = 'bands' 
+   restart_mode    = 'from_scratch' 
+   outdir          = './temp/' 
+   pseudo_dir      = './../../pseudos/' 
+   prefix          = 'silicon' 
+   verbosity       = 'high' 
+   etot_conv_thr   = 1.0D-6 
+   forc_conv_thr   = 1.0D-5 
+ /
+ &SYSTEM
+   ibrav           = -5
+   A               = 3.84221005 
+   cosAB           = 0.5 
+   nat             = 2
+   ntyp            = 1
+   ecutwfc         = 50 
+   nbnd            = 8
+ /
+ &ELECTRONS
+   conv_thr        = 1e-9 
+ /
+ATOMIC_SPECIES
+   Si   28.08550  Si.pbesol-n-kjpaw_psl.1.0.0.UPF 
+ATOMIC_POSITIONS crystal 
+   Si      0.749999881    0.749999881    0.749999881    
+   Si      0.499999911    0.499999911    0.499999911    
+K_POINTS crystal_b 
+7 
+   0.000000000    0.000000000    0.000000000     15.000000000 
+   0.500000000    0.000000000    0.500000000     10.000000000 
+   0.625000000    0.250000000    0.625000000     20.000000000 
+   0.000000000    0.000000000    0.000000000     15.000000000 
+   0.500000000    0.500000000    0.500000000     15.000000000 
+   0.500000000    0.250000000    0.750000000     10.000000000 
+   0.500000000    0.000000000    0.500000000     15.000000000 
+

@@ -1,0 +1,6 @@
+ &BANDS
+   prefix          = 'silicon' 
+   outdir          = './temp/' 
+   filband         = 'bands_pp.dat' 
+ /
+
