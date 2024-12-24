@@ -1,0 +1,6 @@
+ &DOS
+   prefix          = 'fe' 
+   outdir          = './temp/' 
+   fildos          = 'dos.dat' 
+ /
+
