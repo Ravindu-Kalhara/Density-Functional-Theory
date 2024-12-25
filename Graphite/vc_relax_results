@@ -1,0 +1,21 @@
+Initial
+a = 2.4672913551, b = 2.4672913551265974, c = 7.8030729294
+
+STD DFT
+total energy              =     -72.46350917 Ry
+a = 2.458779335, b = 2.458780050330701, c = 7.1052417755
+
+DFT-D2
+total energy              =     -72.50257353 Ry
+a = 2.4543356895, b = 2.4543364048334047, c = 6.0908937454
+
+DFT_D3 (zero)
+total energy              =     -72.48173525 Ry
+a = 2.4585793018, b = 2.458577871287497, c = 6.6251192093
+
+DFT_D3 (BJ)
+total energy              =     -72.49255938 Ry
+a = 2.4584658146, b = 2.4584639071990257, c = 6.5976109505
+
+Crystal Structure of Graphite, Graphene and Silicon (https://community.wvu.edu/~miholcomb/graphene.pdf)
+a = 2.46, c = 6.71
