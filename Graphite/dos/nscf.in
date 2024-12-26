@@ -1,0 +1,34 @@
+ &CONTROL
+   calculation     = 'nscf' 
+   outdir          = './temp' 
+   pseudo_dir      = './../../pseudos' 
+   prefix          = 'graphite' 
+   verbosity       = 'high' 
+   etot_conv_thr   = 1.0D-5 
+   forc_conv_thr   = 1.0D-4 
+ /
+ &SYSTEM
+   ibrav           = 4
+   A               = 2.45858 
+   C               = 6.62512 
+   nat             = 4
+   ntyp            = 1
+   ecutwfc         = 50 
+   ecutrho         = 400 
+   nosym           = .false. 
+   occupations     = 'tetrahedra' 
+   vdw_corr        = 'grimme-d3' 
+ /
+ &ELECTRONS
+   conv_thr        = 1.0D-9 
+ /
+ATOMIC_SPECIES
+    C   12.01100  C.pbesol-n-kjpaw_psl.1.0.0.UPF 
+ATOMIC_POSITIONS crystal 
+    C      0.000000000    0.000000000    0.250000000    
+    C      0.000000000    0.000000000    0.750000000    
+    C      0.333333333    0.666666666    0.250000000    
+    C      0.666666666    0.333333333    0.750000000    
+K_POINTS automatic 
+  15 15 7   0 0 0 
+

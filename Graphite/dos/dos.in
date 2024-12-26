@@ -1,0 +1,6 @@
+ &DOS
+   prefix          = 'graphite' 
+   outdir          = './temp/' 
+   fildos          = 'dos.dat' 
+ /
+
