@@ -3,4 +3,5 @@
 */get_kpoints/results
 */get_ecutwfc/results
 */bands/xmgr
+*/bands/gnuplot
 *.err
