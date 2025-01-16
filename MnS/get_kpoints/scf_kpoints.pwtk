@@ -1,0 +1,17 @@
+load_fromPWI scf.in
+
+set fid [open etot-vs-kpoint.dat w]
+set outdir "./results"
+
+foreach k { 2 3 4 5 6 7 8 9 10 11 12 13 14 } {
+
+    set name scf_kpoints-$k
+
+    K_POINTS automatic "$k $k $k 0 0 0"
+    runPW "$outdir/$name.in"
+
+    set Etot [::pwtk::pwo::totene "$outdir/$name.out"]
+    puts $fid "$k $Etot"
+}
+
+close $fid
