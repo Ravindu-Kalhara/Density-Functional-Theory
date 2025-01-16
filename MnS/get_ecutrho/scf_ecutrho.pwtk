@@ -1,0 +1,17 @@
+load_fromPWI scf.in
+
+set fid [open etot-vs-ecutrho.dat w]
+set outdir "./results"
+
+foreach ecutrho { 60 75 90 105 120 135 150 165 180 195 210 225 240 } {
+
+    set name scf_ecutrho-$ecutrho
+
+    SYSTEM "ecutrho = $ecutrho"
+    runPW "$outdir/$name.in"
+
+    set Etot [::pwtk::pwo::totene "$outdir/$name.out"]
+    puts $fid "$ecutrho $Etot"
+}
+
+close $fid
