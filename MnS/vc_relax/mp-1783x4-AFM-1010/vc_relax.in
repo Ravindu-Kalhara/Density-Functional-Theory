@@ -1,0 +1,54 @@
+ &CONTROL
+   calculation     = 'vc-relax' 
+   outdir          = './temp' 
+   pseudo_dir      = './../../../pseudos' 
+   prefix          = 'mns' 
+   verbosity       = 'high' 
+   etot_conv_thr   = 1.0D-5 
+   forc_conv_thr   = 1.0D-4 
+ /
+ &SYSTEM
+   ibrav           = 0
+   nat             = 8
+   ntyp            = 5
+   ecutwfc         = 30 
+   ecutrho         = 150 
+   occupations     = 'smearing' 
+   degauss         = 0.01 
+   smearing        = 'gaussian' 
+   nspin           = 2 
+   starting_magnetization(1) = 0.2
+   starting_magnetization(2) = -0.2
+   starting_magnetization(3) = 0.2
+   starting_magnetization(4) = -0.2
+ /
+ &ELECTRONS
+   conv_thr        = 1.0D-10 
+ /
+ &IONS
+ /
+ &CELL
+   cell_dofree     = 'ibrav' 
+ /
+CELL_PARAMETERS angstrom 
+     7.824716568    0.000000000    0.000000000 
+     3.912357833    6.776403586    0.000000000 
+     1.956178916    1.129400511    3.194427316 
+ATOMIC_SPECIES
+  Mn1   54.93800  Mn.pbe-spn-kjpaw_psl.0.3.1.UPF 
+  Mn2   54.93800  Mn.pbe-spn-kjpaw_psl.0.3.1.UPF 
+  Mn3   54.93800  Mn.pbe-spn-kjpaw_psl.0.3.1.UPF 
+  Mn4   54.93800  Mn.pbe-spn-kjpaw_psl.0.3.1.UPF 
+    S   32.06500  S.pbe-n-kjpaw_psl.1.0.0.UPF 
+ATOMIC_POSITIONS crystal 
+  Mn1      0.376709342    0.369786352    0.753505349    
+  Mn2      0.376710027    0.869784117    0.753506899    
+  Mn3      0.876709521    0.369786114    0.753505409    
+  Mn4      0.876710296    0.869784176    0.753506541    
+    S      0.998290062    0.005215195    0.996493697    
+    S      0.998290241    0.505214453    0.996494234    
+    S      0.498290092    0.005215157    0.996493697    
+    S      0.498290390    0.505214393    0.996494114    
+K_POINTS automatic 
+  3 3 5   0 0 0 
+
