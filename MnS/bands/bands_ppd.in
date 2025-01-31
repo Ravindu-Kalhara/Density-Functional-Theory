@@ -1,0 +1,7 @@
+ &BANDS
+   prefix          = 'mns' 
+   outdir          = './temp' 
+   filband         = 'bands_ppd.dat' 
+   spin_component  = 2 
+ /
+
