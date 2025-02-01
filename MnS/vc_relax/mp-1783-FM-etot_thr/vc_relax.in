@@ -5,7 +5,7 @@
    prefix          = 'mns' 
    verbosity       = 'high' 
    etot_conv_thr   = 1.0D-7 
-   forc_conv_thr   = 1.0D-5 
+   forc_conv_thr   = 1.0D-4 
  /
  &SYSTEM
    ibrav           = -5
