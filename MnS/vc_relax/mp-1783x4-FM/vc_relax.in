@@ -23,7 +23,6 @@
    starting_magnetization(4) = 0.2
  /
  &ELECTRONS
-   scf_must_converge = .false. 
    conv_thr        = 1.0D-10 
  /
  &IONS
