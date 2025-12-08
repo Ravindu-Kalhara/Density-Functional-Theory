@@ -1,5 +1,5 @@
 
-     Program DOS v.7.3.1 starts on 21Dec2024 at 20:25:21 
+     Program DOS v.7.3.1 starts on  8Dec2025 at 13: 3: 3 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,11 +10,10 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     8 processors
+     Parallel version (MPI), running on     1 processors
 
      MPI processes distributed on     1 nodes
-     R & G space division:  proc/nbgrp/npool/nimage =       8
-     11143 MiB available memory on the printing compute node when the environment starts
+     9067 MiB available memory on the printing compute node when the environment starts
 
 
      Reading xml data from directory:
@@ -29,11 +28,9 @@
      Please, verify this is what you really want
 
 
-     Parallelization info
+     G-vector sticks info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min          91      91     27                 1617     1617     278
-     Max          92      92     28                 1618     1618     280
      Sum         733     733    223                12939    12939    2229
 
      Using Slab Decomposition
@@ -42,10 +39,10 @@
      Tetrahedra used
 
 
-     DOS          :      1.33s CPU      1.47s WALL
+     DOS          :      4.21s CPU      4.24s WALL
 
 
-   This run was terminated on:  20:25:23  21Dec2024            
+   This run was terminated on:  13: 3: 7   8Dec2025            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
