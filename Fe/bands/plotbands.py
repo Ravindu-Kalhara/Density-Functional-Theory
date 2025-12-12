@@ -8,7 +8,8 @@ plt.rcParams["figure.figsize"]=(8, 6)
 
 # load data
 data = np.loadtxt('bands_pp.dat.gnu')
-fermi_energy = 19.9758
+fermi_energy = 19.231
+
 high_symmetry_point_lst = [0.0000, 0.5000, 1.0000, 1.5000, 2.2071, 2.9142]   # from bands_pp.out file
 high_symmetry_pointlbl_lst = ["$\Gamma$", "X", "M", "X1", "R", "X"]          # from kpath.kpf file
 
