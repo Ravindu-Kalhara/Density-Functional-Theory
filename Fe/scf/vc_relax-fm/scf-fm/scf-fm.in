@@ -1,0 +1,35 @@
+ &CONTROL
+   calculation     = 'scf' 
+   outdir          = './temp/' 
+   pseudo_dir      = './../../../pseudos/' 
+   prefix          = 'fe-fm' 
+   verbosity       = 'high' 
+   tstress         = .true. 
+   tprnfor         = .true. 
+ /
+ &SYSTEM
+   ibrav           = 1
+   A               = 2.7895729542 
+   nat             = 2
+   ntyp            = 2
+   ecutwfc         = 120 
+   ecutrho         = 960 
+   occupations     = 'smearing' 
+   degauss         = 0.02 
+   smearing        = 'gaussian' 
+   nspin           = 2 
+   starting_magnetization(1) = 0.3
+   starting_magnetization(2) = 0.3
+ /
+ &ELECTRONS
+   conv_thr        = 1.0D-10 
+ /
+ATOMIC_SPECIES
+  Fe1   55.84500  Fe.pbesol-spn-kjpaw_psl.1.0.0.UPF 
+  Fe2   55.84500  Fe.pbesol-spn-kjpaw_psl.1.0.0.UPF 
+ATOMIC_POSITIONS crystal 
+  Fe1      0.000000000    0.000000000    0.000000000    
+  Fe2      0.500000000    0.500000000    0.500000000    
+K_POINTS automatic 
+  11 11 11   0 0 0 
+

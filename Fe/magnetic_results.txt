@@ -1,0 +1,65 @@
+Objective: 
+
+The goal is to determine whether the magnetic state depends on performing the vc-relax calculation 
+under different initial magnetic configurations (FM and AFM). The relaxations for the AFM and NM 
+states were carried out using cell_dofree = 'ibrav'.
+
+Results:
+
+vc-relax starting from the FM state
+total energy              =     -653.83384553 Ry
+Final enthalpy            =     -653.8342665700 Ry
+total magnetization       =     4.20 Bohr mag/cell
+absolute magnetization    =     4.36 Bohr mag/cell
+Total force               =     0.000000
+P                         =     -0.57 kbar
+A                         =     2.7895729542
+
+AFM
+total energy              =     -653.77816985 Ry
+total magnetization       =     0.00 Bohr mag/cell
+absolute magnetization    =     2.28 Bohr mag/cell
+Total force               =     0.000000
+P                         =     -101.62 kbar
+
+FM		
+total energy              =     -653.83384553 Ry
+total magnetization       =     4.20 Bohr mag/cell
+absolute magnetization    =     4.36 Bohr mag/cell
+Total force               =     0.000000
+P                         =     -0.56 kbar
+
+NM		
+total energy              =     -653.77528136 Ry
+Total force               =     0.000000
+P                         =     -169.86 kbar
+
+###################################################################################################
+
+vc-relax starting from the AFM state
+total energy              =     -653.78075244 Ry
+Final enthalpy            =     -653.7814665555 Ry
+total magnetization       =     0.00 Bohr mag/cell
+absolute magnetization    =     0.00 Bohr mag/cell
+Total force               =     0.000000
+P                         =     -1.95 kbar
+A                         =     2.7284326553
+
+AFM
+total energy              =     -653.78078658 Ry
+total magnetization       =     0.00 Bohr mag/cell
+absolute magnetization    =     0.91 Bohr mag/cell
+Total force               =     0.000000
+P                         =     12.34 kbar
+
+FM		
+total energy              =     -653.82834419 Ry
+total magnetization       =     3.95 Bohr mag/cell
+absolute magnetization    =     4.09 Bohr mag/cell
+Total force               =     0.000000
+P                         =     171.05 kbar
+
+NM		
+total energy              =     -653.78076605 Ry
+Total force               =     0.000000
+P                         =     -2.01 kbar
