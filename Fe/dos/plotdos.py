@@ -4,12 +4,12 @@ import numpy as np
 
 # load data
 energy, dosup, dosdw, idos = np.loadtxt('./dos.dat', unpack=True)
-fermi_energy = 19.973
+fermi_energy = 19.231
 
 # make plot
 plt.figure(figsize = (10, 5))
-plt.plot(energy, dosup, linewidth=0.75, color='red')
-plt.plot(energy, -dosdw, linewidth=0.75, color='blue')
+plt.plot(energy, dosup, linewidth=0.75, color='red', label='Spin up')
+plt.plot(energy, -dosdw, linewidth=0.75, color='blue', label='Spin down')
 plt.yticks([])
 plt.xlabel('Energy (eV)')
 plt.ylabel('DOS')
@@ -19,5 +19,6 @@ plt.ylim(-12, 10)
 plt.fill_between(energy, 0, dosup, where=(energy < fermi_energy), facecolor='red', alpha=0.25)
 plt.fill_between(energy, 0, -dosdw, where=(energy < fermi_energy), facecolor='blue', alpha=0.25)
 plt.text(fermi_energy-0.3, -8, 'Fermi energy', fontsize="medium", rotation=90)
+plt.legend()
 plt.tight_layout()
 plt.show()

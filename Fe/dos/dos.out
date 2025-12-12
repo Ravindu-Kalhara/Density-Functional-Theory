@@ -1,5 +1,5 @@
 
-     Program DOS v.7.3.1 starts on 23Dec2024 at 21:14:17 
+     Program DOS v.7.3.1 starts on 12Dec2025 at 10:27:24 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,11 +10,11 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on     4 processors
+     Parallel version (MPI), running on     6 processors
 
      MPI processes distributed on     1 nodes
-     R & G space division:  proc/nbgrp/npool/nimage =       4
-     11220 MiB available memory on the printing compute node when the environment starts
+     R & G space division:  proc/nbgrp/npool/nimage =       6
+     11485 MiB available memory on the printing compute node when the environment starts
 
 
      Reading xml data from directory:
@@ -33,24 +33,22 @@
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         260     129     42                 6334     2231     393
-     Max         261     130     43                 6337     2232     394
-     Sum        1041     517    169                25341     8925    1575
+     Min         351     175     50                12240     4303     688
+     Max         352     179     52                12242     4304     691
+     Sum        2109    1057    305                73447    25821    4139
 
      Using Slab Decomposition
 
 
-     Check: negative core charge=   -0.000003
-
-     negative rho (up, down):  0.000E+00 1.337E-04
+     negative rho (up, down):  0.000E+00 9.024E-05
 
      Tetrahedra used
 
 
-     DOS          :   1m10.04s CPU   1m10.34s WALL
+     DOS          :   1m27.24s CPU   1m33.42s WALL
 
 
-   This run was terminated on:  21:15:27  23Dec2024            
+   This run was terminated on:  10:28:57  12Dec2025            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
