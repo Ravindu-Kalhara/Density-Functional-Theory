@@ -19,7 +19,7 @@
    smearing        = 'fermi-dirac' 
  /
  &ELECTRONS
-   conv_thr        = 1.0D-8 
+   conv_thr        = 1.0D-9 
  /
  &IONS
  /
