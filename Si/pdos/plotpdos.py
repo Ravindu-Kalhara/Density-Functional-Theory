@@ -5,7 +5,7 @@ import numpy as np
 energy, pdos_s = np.loadtxt('atom_Si_s.dat', unpack=True)
 _, pdos_p = np.loadtxt('atom_Si_p.dat', unpack=True)
 _, dos, pdos_tot = np.loadtxt('pdos.pdos_tot', unpack=True)
-fermi_energy = 6.553
+fermi_energy = 6.5542
 
 plt.figure(figsize = (8, 4))
 plt.plot(energy, pdos_s, linewidth=0.75, color='#006699', label='s-orbital PDOS')
