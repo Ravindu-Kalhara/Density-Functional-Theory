@@ -4,7 +4,7 @@ import numpy as np
 
 # load data
 energy, dos, idos = np.loadtxt('./dos.dat', unpack=True)
-fermi_energy = 6.553
+fermi_energy = 6.5542
 
 # make plot
 plt.figure(figsize = (10, 5))
