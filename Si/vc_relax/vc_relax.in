@@ -4,8 +4,9 @@
    outdir          = './temp/' 
    pseudo_dir      = './../../pseudos/' 
    prefix          = 'silicon' 
-   etot_conv_thr   = 1.0D-6 
-   forc_conv_thr   = 1.0D-5 
+   verbosity       = 'high' 
+   etot_conv_thr   = 1.0D-5 
+   forc_conv_thr   = 1.0D-4 
  /
  &SYSTEM
    ibrav           = -5
@@ -13,19 +14,19 @@
    cosAB           = 0.5 
    nat             = 2
    ntyp            = 1
-   ecutwfc         = 40 
+   ecutwfc         = 45 
    occupations     = 'smearing' 
-   degauss         = 0.001 
+   degauss         = 0.0005 
    smearing        = 'gaussian' 
  /
  &ELECTRONS
    conv_thr        = 1.0D-8 
  /
  &IONS
-   ion_dynamics    = 'bfgs' 
  /
  &CELL
    cell_dofree     = 'ibrav' 
+   press_conv_thr  = 1.0D-1 
  /
 ATOMIC_SPECIES
    Si   28.08550  Si.pbesol-n-kjpaw_psl.1.0.0.UPF 
@@ -33,5 +34,5 @@ ATOMIC_POSITIONS crystal
    Si      0.750000000    0.750000000    0.750000000    
    Si      0.500000000    0.500000000    0.500000000    
 K_POINTS automatic 
-  6 6 6   0 0 0 
+  7 7 7   0 0 0 
 

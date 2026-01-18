@@ -13,7 +13,7 @@ def read_vasp_file(filename):
     # Lattice vectors
     lattice_vectors = np.empty((3, 3))
     for i in range(2, 5):
-        vector = np.array([float(x) for x in lines[i].split()])
+        vector = np.array([float(x) for x in lines[i].split()]) 
         lattice_vectors[i-2] = scaling_factor * vector
 
     return lattice_vectors
