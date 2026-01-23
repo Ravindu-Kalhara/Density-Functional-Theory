@@ -9,3 +9,4 @@
 */bands/gnuplot
 *.err
 Al-vacancy-formation/t8_steps.pdf
+.venv/
